@@ -1,0 +1,3084 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Diphylleia-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SokchoBadaBatang";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaBatang.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-bold {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Diphylleia-Regular";
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.nav.visible {
+  opacity: 1;
+}
+
+.opening {
+  width: 100vw;
+  height: 1129px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #051320;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap1 {
+  width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  display: block;
+  padding: 40px 40px;
+  text-decoration: none;
+  top: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  color: #897D5D;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 0;
+  padding-left: 20px;
+  padding-top: 15px;
+  align-content: center;
+  font-family: "Diphylleia-Regular";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.logo-1 {
+  position: absolute;
+  z-index: 3;
+  top: 40px;
+  left: 0;
+  padding-left: 20px;
+  padding-top: 17px;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.rectangle-1 {
+  max-width: 1536px;
+  height: 848px;
+  top: 83px;
+  margin: 15px auto;
+  padding: 0;
+  align-content: center;
+  z-index: 10;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#sound-0, #sound, #united, #blending, #moment {
+  transition: transform 0ms ease-in-out;
+}
+
+.centered {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-title {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rellax {
+  will-change: transform;
+}
+
+.sound-0 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 240px;
+  top: 230px;
+  left: 49.5px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 203;
+}
+
+.sound {
+  position: absolute;
+  width: 292px;
+  height: 240px;
+  top: 430px;
+  left: 49.5px;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+.sound-3 {
+  position: relative;
+  color: #ffffff;
+  font-family: "SokchoBadaBatang";
+  font-size: 160px;
+  font-weight: 400;
+  line-height: 240px;
+  text-align: left;
+}
+
+.this {
+  position: relative;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+}
+
+.united {
+  position: absolute;
+  width: 441px;
+  height: 240px;
+  top: 650px;
+  left: 469.5px;
+  font-family: "Diphylleia-Regular";
+  font-size: 160px;
+  font-weight: 500;
+  line-height: 160px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 211;
+}
+
+.one {
+  position: relative;
+  color: #ffffff;
+  font-family: "SokchoBadaBatang";
+}
+
+.united-4 {
+  position: relative;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 192px;
+  text-align: left;
+}
+
+.vector-5 {
+  position: absolute;
+  width: 850.39px;
+  height: 293px;
+  top: 783px;
+  background: url(./assets/images/2a1067f0-68a8-4bdb-995b-f4f75bbe7509.png) no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+
+.vector-123 {
+  position: absolute;
+  width: 950px;
+  height: 392.109px;
+  top: -110.5px;
+  left: 927.16px;
+  background: url(./assets/images/Vector-123.png) no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+
+.blending {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 240px;
+  top: 800px;
+  left: 469.5px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 203;
+}
+
+.moment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 240px;
+  top: 785px;
+  left: 1405.5px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 240px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 204;
+}
+
+.line {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 1027px;
+  left: 1.5px;
+  background: url(./assets/images/ae0a64ad-86cc-4f69-90d7-bc694e806d4a.png) no-repeat center;
+  background-size: cover;
+}
+
+.line-1-1 {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 1097px;
+  left: 1.5px;
+  background: url(./assets/images/ae0a64ad-86cc-4f69-90d7-bc694e806d4a.png) no-repeat center;
+  background-size: cover;
+}
+
+.vector-6 {
+  position: absolute;
+  width: 18px;
+  height: 30.71px;
+  top: 1045px;
+  right: 30px;
+  background: url(./assets/images/b5837f69-cb7f-4a40-a9eb-6bf6195a4200.png) no-repeat center;
+  background-size: cover;
+}
+
+.riccardo-muti {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 1050px;
+  left: 19.5px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 207;
+}
+
+.read-more {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 1051px;
+  right: 71px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 208;
+}
+
+.line-7 {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 1075px;
+  left: 1.5px;
+  background: url(./assets/images/60d18b2b-7939-4a6c-a798-9f43966e31c9.png) no-repeat center;
+  background-size: cover;
+}
+
+.test {
+  height: 4000px;
+}
+
+/*내용*/
+.flex-row-cea {
+  position: relative;
+  width: 100vw;
+  height: 572.5px;
+  top: 1100px;
+  background-color: #051320;
+  overflow: hidden;
+}
+
+.vector-8 {
+  position: absolute;
+  width: 100vw;
+  height: 567.397px;
+  top: -0.29px;
+  left: 1.373px;
+  background: url(./assets/images/fdff6e2a-91c9-4f36-bcdc-07ff7c12373e.png) no-repeat center;
+  background-size: cover;
+  z-index: 219;
+}
+
+.vector-9 {
+  position: absolute;
+  width: 282.206px;
+  height: 96.747px;
+  top: 18.554px;
+  left: 1043.311px;
+  background: url(./assets/images/bd0579aa-cda1-4353-979b-a8b9882790c4.png) no-repeat center;
+  background-size: cover;
+  z-index: 222;
+}
+
+.vector-39 {
+  position: absolute;
+  width: 425.292px;
+  height: 249.084px;
+  top: 94px;
+  left: 1302.708px;
+  background: url(./assets/images/67d38a8f-12bb-4150-981f-b51e750d9b02.png) no-repeat center;
+  background-size: cover;
+  z-index: 221;
+}
+
+.diverse-instruments-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 108px;
+  top: 90.789px;
+  left: 314.472px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 224;
+  overflow: hidden;
+}
+
+.vector-a {
+  position: absolute;
+  width: 963.254px;
+  height: 404.872px;
+  top: 168.704px;
+  left: 0.84px;
+  background: url(./assets/images/a5df7df3-3e43-4a27-9a5a-9c925bcd0577.png) no-repeat center;
+  background-size: cover;
+  z-index: 223;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 240px;
+  height: 31px;
+  top: 344.796px;
+  left: 253px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #ffffff;
+  z-index: 11;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 12;
+}
+
+.frame-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 199px;
+  height: 31px;
+  top: 344.796px;
+  left: 38px;
+  padding: 2px 17px 2px 17px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept-c {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.vector-d {
+  position: absolute;
+  width: 529.634px;
+  height: 375.928px;
+  top: 196.748px;
+  right: 0;
+  background: url(./assets/images/5e54ef40-3186-4450-b957-52e55e259a04.png) no-repeat center;
+  background-size: cover;
+  z-index: 220;
+}
+
+.history {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 269px;
+  height: 111px;
+  top: 183.752px;
+  left: 204.99px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 74px;
+  font-weight: 500;
+  line-height: 111px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 218;
+}
+
+.line-7 {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 570px;
+  left: 1.5px;
+  background: url(./assets/images/60d18b2b-7939-4a6c-a798-9f43966e31c9.png) no-repeat center;
+  background-size: cover;
+}
+
+/*기원*/
+.line-1-1-1 {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 0px;
+  left: 1.5px;
+  background: url(./assets/images/ae0a64ad-86cc-4f69-90d7-bc694e806d4a.png) no-repeat center;
+  background-size: cover;
+}
+
+.flex-row-cac {
+  position: relative;
+  width: 100vw;
+  height: 3800px;
+  top: 1101px;
+  left: 0;
+  z-index: 186;
+  background-color: #051320;
+  display: flex; /* 추가 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  flex-direction: column; /* 수직 방향 정렬 */
+}
+
+.line-29 {
+  position: absolute;
+  width: 3px;
+  height: 1624px;
+  top: 0;
+  left: 780px;
+  background: url(./assets/images/dfb80c37-64db-4b71-89d5-51e720310e33.png) no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+
+.ellipse-2b {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 1623px;
+  left: 778px;
+  background: url(./assets/images/e25d3ecf-ad7f-409e-b6ef-53ac45dad09b.png) no-repeat center;
+  background-size: cover;
+  z-index: 20;
+  border-radius: 50%;
+}
+
+.vector-2a {
+  position: absolute;
+  width: 76.846px;
+  height: 453.778px;
+  top: 1464.884px;
+  left: 0;
+  background: url(./assets/images/09bbb153-9ce2-481a-9e6e-86afd07fa68d.png) no-repeat center;
+  background-size: cover;
+  z-index: 183;
+}
+
+.image {
+  position: absolute;
+  width: 1329.16px;
+  height: 647.166px;
+  top: 1770px;
+  background: url(./assets/images/68250829-9d3a-4912-90be-c3f11d5c9c51.png) no-repeat center;
+  background-size: cover;
+  z-index: 8;
+  border-radius: 30px;
+  margin: 15px auto; /* 중앙 정렬을 위해 추가 */
+  padding: 0;
+  align-content: center;
+  overflow: hidden;
+  /* position과 top 속성 제거 또는 수정 */
+}
+
+.vector-2c {
+  position: absolute;
+  width: 38.575px;
+  height: 47.418px;
+  top: 1938.412px;
+  left: 86.62px;
+  background: url(./assets/images/0cdbb805-c625-4845-ac59-b19dfaa74f48.png) no-repeat center;
+  background-size: cover;
+  z-index: 184;
+}
+
+.group-2d {
+  position: absolute;
+  width: 435px;
+  height: 367px;
+  top: 2200px;
+  left: 38px;
+  background: url(./assets/images/c8261949-31c4-4d04-9ae1-ac4ab7020e28.png) no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+
+.conductor-2e {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2495px;
+  width: 214px;
+  height: 111px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 74px;
+  font-weight: 500;
+  line-height: 111px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 186;
+}
+
+.vector-10 {
+  position: absolute;
+  width: 846.159px;
+  height: 260.709px;
+  top: 2780px;
+  left: 0;
+  background: url(./assets/images/82ff7564-905c-46c2-8a05-ab06873baf34.png) no-repeat center;
+  background-size: cover;
+  z-index: 212;
+}
+
+.vector-e {
+  position: relative;
+  width: 23.663px;
+  height: 42.876px;
+  top: 750px;
+  left: -20px;
+  background: url(./assets/images/bbe6789e-6bfb-4d58-b28a-5f5d0cb2f56a.png) no-repeat center;
+  background-size: cover;
+  z-index: 3;
+}
+
+.group-3a {
+  position: absolute;
+  width: 497px;
+  height: 712.971px;
+  top: 1870px;
+  right: 0px;
+  background: url(./assets/images/15a44363-50d7-49d1-9402-cdee85ba001c.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.vector-2a {
+  position: absolute;
+  width: 76.846px;
+  height: 453.778px;
+  top: 1464.884px;
+  left: 0;
+  background: url(./assets/images/09bbb153-9ce2-481a-9e6e-86afd07fa68d.png) no-repeat center;
+  background-size: cover;
+  z-index: 183;
+}
+
+.vector-2c {
+  position: absolute;
+  width: 38.575px;
+  height: 47.418px;
+  top: 1938.412px;
+  left: 86.62px;
+  background: url(./assets/images/0cdbb805-c625-4845-ac59-b19dfaa74f48.png) no-repeat center;
+  background-size: cover;
+  z-index: 184;
+}
+
+.flex-row-a {
+  position: absolute;
+  width: 1271px;
+  height: 108px;
+  top: 20px;
+  left: 38px;
+  z-index: 25;
+}
+
+.orchestra-origin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 0;
+  left: 20px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 23;
+}
+
+.vector-2f {
+  position: absolute;
+  width: 35.992px;
+  height: 18px;
+  top: 0;
+  left: 194px;
+  background: url(./assets/images/2acf103d-8a4d-4ffe-87b3-3a8df96dcf22.png) no-repeat center;
+  background-size: cover;
+  z-index: 25;
+}
+
+.short-history-orchestra {
+  position: absolute;
+  width: 516px;
+  height: 108px;
+  top: 0;
+  left: 780px;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 15;
+}
+
+.classical-music-orchestra {
+  position: relative;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+}
+
+.short-history-200-years {
+  position: relative;
+  color: #897d5d;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+}
+
+.ellipse-30 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 6px;
+  left: 0;
+  background: url(./assets/images/8801a90a-73d7-4551-86a3-a07e240f0639.png) no-repeat center;
+  background-size: cover;
+  z-index: 24;
+  border-radius: 50%;
+}
+
+.vector-31 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 518px;
+  height: 108px;
+  top: 154px;
+  left: 820px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 14;
+}
+
+.orchestra-concept-32 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 518px;
+  height: 108px;
+  top: 292px;
+  left: 820px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 16;
+}
+
+.flex-row-f-33 {
+  position: absolute;
+  width: 100vw;
+  height: 1062px;
+  top: 464px;
+  left: 70px;
+  z-index: 21;
+}
+
+.image-34 {
+  position: absolute;
+  width: 704px;
+  height: 514px;
+  top: 0;
+  left: -25px;
+  background: url(./assets/images/a91db8f16563a4e7a46107319f36f2d24bdede72.png) no-repeat center;
+  background-size: cover;
+  z-index: 18;
+  border-radius: 30px;
+}
+
+.ellipse-35 {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  margin: 157px 0 0 294px;
+  background: url(./assets/images/5daba86d-a429-446d-979d-92dcb3ee4125.png) no-repeat center;
+  background-size: cover;
+  z-index: 26;
+  border-radius: 50%;
+}
+
+.orchestra-location-greece {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 27px;
+  top: 0;
+  left: 772px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 17;
+}
+
+.ellipse-36 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 10.934px;
+  left: 755px;
+  background: url(./assets/images/ccee7311-caef-4f33-8571-610082aa0aad.png) no-repeat center;
+  background-size: cover;
+  z-index: 21;
+  border-radius: 50%;
+}
+
+.image-37 {
+  position: absolute;
+  width: 704px;
+  height: 514px;
+  top: 415px;
+  left: 755px;
+  background: url(./assets/images/981c98bc-5eac-49bb-93f7-29483535de97.png) no-repeat center;
+  background-size: cover;
+  z-index: 6;
+  border-radius: 30px;
+}
+
+.image-38 {
+  position: absolute;
+  width: 534px;
+  height: 390px;
+  top: 672px;
+  left: 145px;
+  background: url(./assets/images/464f2da0-e58f-40f7-bf13-84b6b584275f.png) no-repeat center;
+  background-size: cover;
+  z-index: 7;
+  border-radius: 30px;
+}
+
+/* 부모 요소 */
+.flex-row-f {
+  position: relative; /* 이 부분이 이미 설정되어 있는지 확인하세요 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  flex-direction: column; /* 필요에 따라 추가 */
+}
+
+/* .conductor-influence 요소 */
+.conductor-influence {
+  max-width: 900px;
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 0;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  position: relative; /* position을 relative 또는 static으로 변경 */
+}
+
+.vector-10 {
+  position: absolute;
+  width: 846.159px;
+  height: 260.709px;
+  top: 0.29px;
+  left: 0;
+  background: url(./assets/images/82ff7564-905c-46c2-8a05-ab06873baf34.png) no-repeat center;
+  background-size: cover;
+  z-index: 212;
+}
+
+.three-music {
+  position: relative;
+  width: 100vw;
+  height: 1645px;
+}
+
+.line-11 {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 200px;
+  left: 1.5px;
+  background: url(./assets/images/ae0a64ad-86cc-4f69-90d7-bc694e806d4a.png) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 300;
+}
+
+.flex-row-d {
+  position: relative;
+  width: 281.992px;
+  height: 18px;
+  margin: 20px 0 0 38px;
+  top: 230px;
+  z-index: 300;
+}
+
+.orchestra-conductor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 0;
+  left: 20px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 39;
+}
+
+.vector-12 {
+  position: absolute;
+  width: 35.992px;
+  height: 18px;
+  top: 0;
+  left: 246px;
+  background: url(./assets/images/c4958b9f-2d59-47e5-bd49-c8c85ab0e673.png) no-repeat center;
+  background-size: cover;
+  z-index: 41;
+}
+
+.ellipse {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 6px;
+  left: 0;
+  background: url(./assets/images/f331fcbf-8471-4c5a-9629-d9d3869f48ee.png) no-repeat center;
+  background-size: cover;
+  z-index: 40;
+  border-radius: 50%;
+}
+
+/* 초기 상태 */
+#expandable-row {
+  display: block;
+  transition: all 0.5s ease-out;
+}
+
+#expandable-row .ellipse-15, #expandable-row .ellipse-16, #expandable-row .ellipse-17,
+#expandable-row .german-acoustic, #expandable-row .romantic-acoustic, #expandable-row .russian-acoustic,
+#expandable-row .romantic-poetic-style, #expandable-row .light-colorful-style, #expandable-row .grand-sticky-style,
+#expandable-row .low-pitched-dark-acoustic, #expandable-row .bright-wind-instrument, #expandable-row .dominant-wind-instrument {
+  display: block; /* block 요소로 설정 */
+  transition: transform 0.5s ease-out, margin 0.5s ease-out;
+  margin: 10px 0; /* 각 요소 사이에 간격 추가 */
+}
+
+/* 애니메이션 효과 추가 */
+#expandable-row.expanded .ellipse-15, #expandable-row.expanded .german-acoustic {
+  transform: translateX(200px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .ellipse-16, #expandable-row.expanded .romantic-acoustic, #expandable-row.expanded .romantic-poetic-style {
+  transform: translateX(400px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .ellipse-17, #expandable-row.expanded .russian-acoustic, #expandable-row.expanded .light-colorful-style {
+  transform: translateX(600px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .grand-sticky-style {
+  transform: translateX(600px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .low-pitched-dark-acoustic {
+  transform: translateX(200px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .bright-wind-instrument {
+  transform: translateX(400px); /* 가로로 이동 */
+}
+
+#expandable-row.expanded .dominant-wind-instrument {
+  transform: translateX(600px); /* 가로로 이동 */
+}
+
+.flex-row-14 {
+  position: relative;
+  width: 1522px;
+  height: 400px;
+  margin: 25px 0 0 38px;
+  top: 300px;
+  z-index: 300;
+}
+
+.ellipse-15 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/b9320cbc-3c93-409f-b8af-cf76d8289811.png) no-repeat center;
+  background-size: cover;
+  z-index: 45;
+  border-radius: 50%;
+}
+
+.ellipse-16 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 200px;
+  background: url(./assets/images/d96cad6a-a004-48dd-8d5a-1ee8ae36e502.png) no-repeat center;
+  background-size: cover;
+  z-index: 50;
+  border-radius: 50%;
+}
+
+.ellipse-17 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 400px;
+  background: url(./assets/images/4870e2d2-a1ef-4b66-8c77-c3bb00811108.png) no-repeat center;
+  background-size: cover;
+  z-index: 55;
+  border-radius: 50%;
+}
+
+.german-acoustic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 128px;
+  left: 115px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 46;
+}
+
+.romantic-acoustic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 128px;
+  left: 320px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 51;
+}
+
+.russian-acoustic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 128px;
+  left: 500px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 56;
+}
+
+.group-18 {
+  position: absolute;
+  width: 1522px;
+  height: 7px;
+  top: 198px;
+  left: 0;
+  background: url(./assets/images/f7bb7f38-8c56-42e7-a94d-240051574e81.png) no-repeat center;
+  background-size: cover;
+  z-index: 43;
+}
+
+.low-pitched-dark-acoustic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 341px;
+  height: 54px;
+  top: 190px;
+  left: 30px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: center;
+  z-index: 48;
+}
+
+.bright-wind-instrument {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 341px;
+  height: 27px;
+  top: 190px;
+  left: 230px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 53;
+}
+
+.dominant-wind-instrument {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 341px;
+  height: 54px;
+  top: 190px;
+  left: 429px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: center;
+  z-index: 58;
+}
+
+/*아래*/
+.detail-explanation {
+  position: relative;
+  width: 100vw;
+  height: 900px;
+  top: 300px;
+  background-color: #051320;
+  overflow: hidden;
+}
+
+.flex-row-dcef {
+  position: relative;
+  width: 1252px;
+  height: 29px;
+  margin: 166px 0 0 138px;
+  z-index: 300;
+}
+
+.german-acoustic-19 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 0;
+  color: #dcca98;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.romantic-acoustic-1a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 5px;
+  left: 542px;
+  color: #dcca98;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.russian-acoustic-1b {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 5px;
+  left: 1106px;
+  color: #dcca98;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.flex-row-cee {
+  position: relative;
+  width: 1441.381px;
+  height: 375.667px;
+  margin: 15.333px 0 0 120px;
+  z-index: 300;
+}
+
+.rectangle-1c {
+  position: absolute;
+  width: 327.047px;
+  height: 327.047px;
+  top: 0;
+  left: 563.334px;
+  background: url(./assets/images/4aca8a4996d174cfe6d2b7d086d6604472d596d5.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.rectangle-1d {
+  position: absolute;
+  width: 327.047px;
+  height: 327.047px;
+  top: 0;
+  left: 1114.334px;
+  background: url(./assets/images/879ded28d7cf32cb01fa662f24339ab8c459843f.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.rectangle-1f {
+  position: relative;
+  width: 327.047px;
+  height: 327.047px;
+  margin: 0px 0 0 0;
+  background: url(./assets/images/f54843f0d7c702c2e0c5df2858e4422f500b32d3.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.rectangle-1c:hover,
+.rectangle-1d:hover,
+.rectangle-1f:hover,
+.rectangle-8c:hover,
+.ellipse-98:hover,
+.rectangle-4e:hover {
+  transform: rotate(3deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.line-20 {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  top: 75.666px;
+  left: 451px;
+  background: url(./assets/images/d32c5684-302c-45f1-a387-9936881fbb3c.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.line-21 {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  top: 75.666px;
+  left: 1002px;
+  background: url(./assets/images/d32c5684-302c-45f1-a387-9936881fbb3c.png) no-repeat center;
+  background-size: cover;
+  z-index: 300;
+}
+
+.flex-row-be {
+  position: relative;
+  width: 1429px;
+  height: 24px;
+  margin: 21px 0 0 108px;
+  z-index: 300;
+}
+
+.furtwangler-bayreuth {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.riccardo-muti-24 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 572px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.evgeny-mravinsky {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 1123px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.flex-row-25 {
+  position: relative;
+  width: 1497px;
+  height: 81px;
+  margin: 20px 0 0 108px;
+  z-index: 300;
+}
+
+.beethoven-symphony-choral {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 27px;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 300;
+}
+
+.magic-flute-overture-salzburg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 374px;
+  height: 81px;
+  top: 0;
+  left: 572px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  z-index: 300;
+}
+
+.symphony-e-minor-leningrad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 374px;
+  height: 54px;
+  top: 0;
+  left: 1123px;
+  color: #ffffff;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  z-index: 300;
+}
+
+.flex-row-aaf {
+  position: relative;
+  width: 100vw;
+  height: 490px;
+  top: -3px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.vector-3c {
+  position: absolute;
+  width: 499.417px;
+  height: 492.14px;
+  top: -2.5px;
+  left: 176px;
+  background: url(./assets/images/1ed098eb-1d9e-4575-bce4-2d6d03091519.png) no-repeat center;
+  background-size: cover;
+  z-index: 36;
+}
+
+.arrangement-performance {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 870px;
+  height: 222px;
+  top: 81px;
+  left: calc(50% - 425px);
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 74px;
+  font-weight: 500;
+  line-height: 111px;
+  text-align: center;
+  text-overflow: initial;
+  z-index: 82;
+  overflow: hidden;
+}
+
+.vector-3d {
+  position: absolute;
+  width: 350.67px;
+  height: 346.84px;
+  top: 145.66px;
+  left: 1142.83px;
+  background: url(./assets/images/72954cdc-5a45-45d2-847e-de84cd02902b.png) no-repeat center;
+  background-size: cover;
+  z-index: 35;
+}
+
+.orchestra-instruments-arrangement {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 667px;
+  height: 54px;
+  top: 327px;
+  left: calc(50% - 333px);
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: center;
+  text-overflow: initial;
+  z-index: 83;
+  overflow: hidden;
+}
+
+.line-3e {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 489px;
+  left: 0;
+  background: url(./assets/images/4c30657d-8cae-4945-aef7-676bdf3955a4.png) no-repeat center;
+  background-size: cover;
+  z-index: 84;
+}
+
+.vector-55 {
+  position: absolute;
+  width: 100vw;
+  height: 500px;
+  top: 0px;
+  left: 0;
+  background: url(./assets/images/1c7ed9f9-7e1e-4127-9049-3d238c40463f.png) no-repeat center;
+  background-size: cover;
+  z-index: 37;
+}
+
+.line-3e-top {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 0px;
+  left: 0;
+  background: url(./assets/images/4c30657d-8cae-4945-aef7-676bdf3955a4.png) no-repeat center;
+  background-size: cover;
+  z-index: 84;
+}
+
+.flex-row-bb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 602px;
+  height: 31px;
+  margin: 17px 0 0 38px;
+  z-index: 90;
+}
+
+.frame-3f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 167px;
+  padding: 2px 17px 2px 17px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  z-index: 86;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-arrangement-40 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 87;
+}
+
+.orchestra-instruments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 183px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 88;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.various-orchestra-compositions {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 89;
+}
+
+.line-41 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+  position: relative;
+  width: 220px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-conductor-42 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 91;
+}
+
+.vector-43 {
+  position: relative;
+  width: 100vw;
+  height: 1px;
+  margin: 16px 0 0 0;
+  background: url(./assets/images/4c30657d-8cae-4945-aef7-676bdf3955a4.png) no-repeat center;
+  background-size: cover;
+  z-index: 85;
+}
+
+.how-to-manage {
+  position: relative;
+  width: 100vw;
+  height: 1100px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.flex-row-c {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 23px;
+  position: relative;
+  width: 230.992px;
+  margin: 20px 0 0 38px;
+  z-index: 92;
+}
+
+.group-44 {
+  flex-shrink: 0;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: url(./assets/images/457a2576-f225-4d6c-b478-26b817b31a5b.png) no-repeat center;
+  background-size: cover;
+  z-index: 93;
+  border-radius: 50%;
+}
+
+.orchestra-arrangement-45 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 18px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 94;
+}
+
+.vector-46 {
+  flex-shrink: 0;
+  position: relative;
+  width: 35.992px;
+  height: 18px;
+  background: url(./assets/images/612150f7-c188-46cf-8e0d-668b129c4609.png) no-repeat center;
+  background-size: cover;
+  z-index: 95;
+}
+
+.flex-row-c-47 {
+  position: relative;
+  width: 100vw;
+  height: 943.158px;
+  margin: 63px 0 0 38px;
+  z-index: 180;
+}
+
+.group-48 {
+  position: relative;
+  max-width: 1299px;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  height: 943.158px;
+  top: 10px;
+  justify-content: center;
+  display: flex;
+  background: url(./assets/images/85539490-33d0-4b73-a63a-7b1f0013fa4a.png) no-repeat center;
+  background-size: cover;
+  z-index: 31;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-2000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.group-57, .group-58, .group-59, .group-5a, .ellipse-5b, .group-5c {
+  opacity: 0;
+}
+
+.animate {
+  animation: drop 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+.group-57 {
+  animation-delay: 0.1s;
+}
+
+.group-58 {
+  animation-delay: 0.2s;
+}
+
+.group-59 {
+  animation-delay: 0.3s;
+}
+
+.group-5a {
+  animation-delay: 0.4s;
+}
+
+.ellipse-5b {
+  animation-delay: 0.5s;
+}
+
+.group-5c {
+  animation-delay: 0.6s;
+}
+
+.animate {
+  animation: drop 1s ease-in-out forwards;
+  opacity: 1;
+}
+
+.sticky-main {
+  position: relative;
+  width: 100vw;
+  height: 900px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.vector-46-1 {
+  position: relative;
+  width: 100vw;
+  height: 1px;
+  margin: 1px 0 0 0;
+  background: url(./assets/images/4c30657d-8cae-4945-aef7-676bdf3955a4.png) no-repeat center;
+  background-size: cover;
+  z-index: 85;
+}
+
+.conductor-influence {
+  max-width: 900px;
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 0;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  position: relative; /* position을 relative 또는 static으로 변경 */
+}
+
+.orchestra-name {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 0;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-family: "Diphylleia-Regular";
+  font-size: 74px;
+  font-weight: 500;
+  line-height: 111px;
+  z-index: 214;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ellipse-56 {
+  position: absolute;
+  width: 100vw;
+  height: 890px;
+  top: 0px;
+  left: 0;
+  background: url(./assets/images/aa37977d-3bbd-46ed-ad60-695940d048ef.png) no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.circles {
+  position: relative;
+  width: 100vw;
+  top: -30px;
+  height: 550px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.group-57 {
+  position: absolute;
+  width: 244px;
+  height: 244px;
+  left: 953px;
+  top: 0px;
+  background: url(./assets/images/1d123e83-c455-43ee-b91a-7bea8d98c18b.png) no-repeat center;
+  background-size: cover;
+  z-index: 226;
+}
+
+.group-58 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  left: 650px;
+  top: 45px;
+  background: url(./assets/images/727d2eaf-c720-434d-a3e5-2bb3342dd1b0.png) no-repeat center;
+  background-size: cover;
+}
+
+.group-59 {
+  position: absolute;
+  width: 244px;
+  height: 244px;
+  left: 246px;
+  top: 198px;
+  background: url(./assets/images/be74002e-c45b-498f-a957-d09bd64a2e7a.png) no-repeat center;
+  background-size: cover;
+  z-index: 225;
+}
+
+.group-5a {
+  position: absolute;
+  width: 261px;
+  height: 261px;
+  left: 1047px;
+  top: 223px;
+  background: url(./assets/images/86ca7fb4-4115-47d5-ae75-f934f80de95c.png) no-repeat center;
+  background-size: cover;
+  z-index: 231;
+}
+
+.ellipse-5b {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 775px;
+  top: 210px;
+  background: url(./assets/images/3b546f95-cbbc-4ff3-80fc-3ebbe5e54608.png) no-repeat center;
+  background-size: cover;
+  z-index: 229;
+  border-radius: 50%;
+}
+
+.group-5c {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  left: 490px;
+  top: 228px;
+  background: url(./assets/images/709d2402-b08e-4d9b-b588-95993eda9fc6.png) no-repeat center;
+  background-size: cover;
+  z-index: 227;
+}
+
+.sticky-detail {
+  position: relative;
+  width: 100vw;
+  height: 3020px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.frame-5e {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 23px;
+  position: relative;
+  width: 230.992px;
+  margin: 4px 0 0 38px;
+  z-index: 130;
+}
+
+.ellipse-5f {
+  flex-shrink: 0;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: url(./assets/images/2a419466-3a50-4080-b366-a5ffb80e9607.png) no-repeat center;
+  background-size: cover;
+  z-index: 131;
+  border-radius: 50%;
+}
+
+.orchestra-structure {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 18px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 132;
+}
+
+.vector-60 {
+  flex-shrink: 0;
+  position: relative;
+  width: 35.992px;
+  height: 18px;
+  background: url(./assets/images/e671f11b-9911-48c6-8d83-e1fa11fa64a0.png) no-repeat center;
+  background-size: cover;
+  z-index: 133;
+}
+
+.line-61 {
+  position: absolute;
+  width: 1px;
+  height: 3323px;
+  top: 100px;
+  left: 751px;
+  background: url(./assets/images/b8d062e7-bfd6-4710-bdab-ff1321c032a1.png) no-repeat center;
+  background-size: cover;
+  z-index: 134;
+}
+
+.frame-name {
+  position: fixed; /* fixed 속성을 사용하여 항상 고정되도록 설정 */
+  width: 100vw;
+  height: 60px;
+  z-index: 100; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+  padding: 30px; /* 필요한 경우 추가적인 스타일 */
+}
+
+.frame-62 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 67px;
+  height: 31px;
+  left: 776px;
+  padding: 2px 17px 2px 17px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  z-index: 122;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept-63 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 123;
+}
+
+.frame-64 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 83px;
+  height: 31px;
+  left: 859px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 124;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept-65 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 125;
+}
+
+.frame-66 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 99px;
+  height: 31px;
+  left: 958px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 126;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept-67 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 127;
+}
+
+.frame-68 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 83px;
+  height: 31px;
+  left: 1073px;
+  padding: 2px 17px 2px 17px;
+  background: #000000;
+  border: 1px solid #000000;
+  z-index: 128;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.orchestra-concept-69 {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 129;
+}
+
+.chamber-first {
+  position: relative;
+  width: 100vw;
+  height: 1000px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.chamber-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 54px;
+  top: 216px;
+  left: 776px;
+  color: #897d5d;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 137;
+}
+
+.indoor-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 290px;
+  left: 776px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 140;
+}
+
+.chamber-orchestra-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 518px;
+  height: 108px;
+  top: 350px;
+  left: 776px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 135;
+}
+
+.line-6a {
+  position: absolute;
+  width: 923px;
+  height: 1px;
+  top: 524px;
+  left: 775px;
+  background: url(./assets/images/b6ff9a64-ec2f-42c2-b44d-7b53b85f10a3.png) no-repeat center;
+  background-size: cover;
+  z-index: 142;
+}
+
+.rectangle-6e {
+  position: absolute;
+  width: 556px;
+  height: 332px;
+  top: 550px;
+  left: 775px;
+  background: url(./assets/images/7128b454-df8a-4c6e-82b6-637c9e3890fb.png) no-repeat center;
+  background-size: cover;
+  z-index: 105;
+  border-radius: 20px;
+}
+
+.english-chamber-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 900px;
+  left: 775px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 102;
+}
+
+.Symphony-second {
+  position: relative;
+  width: 100vw;
+  height: 1200px;
+  z-index: 84;
+}
+
+.symphony-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 54px;
+  top: 0px;
+  left: 775px;
+  color: #897d5d;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 138;
+}
+
+.philharmonic-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 54px;
+  top: 60px;
+  left: 775px;
+  color: #897d5d;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 139;
+}
+
+.large-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 140px;
+  left: 775px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 141;
+}
+
+.large-orchestra-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 600px;
+  height: 216px;
+  top: 210px;
+  left: 775px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 136;
+}
+
+.line-6a-1 {
+  position: absolute;
+  width: 923px;
+  height: 1px;
+  top: 423px;
+  left: 775px;
+  background: url(./assets/images/b6ff9a64-ec2f-42c2-b44d-7b53b85f10a3.png) no-repeat center;
+  background-size: cover;
+  z-index: 142;
+}
+
+.rectangle-72 {
+  position: absolute;
+  width: 556px;
+  height: 332px;
+  top: 450px;
+  left: 778px;
+  background: url(./assets/images/4b40d7d6-a440-4582-a295-b08e7b1ce26c.png) no-repeat center;
+  background-size: cover;
+  z-index: 106;
+  border-radius: 20px;
+}
+
+.vienna-philharmonic-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 800px;
+  left: 778px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+
+.rectangle-73 {
+  position: absolute;
+  width: 556px;
+  height: 332px;
+  top: 850px;
+  left: 775px;
+  background: url(./assets/images/3d15a5abee1ee61e9729a304d8ae95abf9ad3a4a.png) no-repeat center;
+  background-size: cover;
+  z-index: 107;
+  border-radius: 20px;
+}
+
+.new-york-philharmonic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 1200px;
+  left: 775px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 104;
+}
+
+.opera-final {
+  position: relative;
+  width: 100vw;
+  height: 1200px;
+  z-index: 84;
+}
+
+.opera-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 54px;
+  top: 100px;
+  left: 775px;
+  color: #897d5d;
+  font-family: "Diphylleia-Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 145;
+}
+
+.performance-orchestra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 170px;
+  left: 775px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 146;
+}
+
+.opera-orchestra-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 518px;
+  height: 135px;
+  top: 231px;
+  left: 775px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 144;
+}
+
+.line-6a-2 {
+  position: absolute;
+  width: 923px;
+  height: 1px;
+  top: 390px;
+  left: 775px;
+  background: url(./assets/images/b6ff9a64-ec2f-42c2-b44d-7b53b85f10a3.png) no-repeat center;
+  background-size: cover;
+  z-index: 142;
+}
+
+.rectangle-76 {
+  position: absolute;
+  width: 556px;
+  height: 332px;
+  top: 418px;
+  left: 778px;
+  background: url(./assets/images/094c57025a1c7e03a9dc6678c2879ba075bf4b5c.png) no-repeat center;
+  background-size: cover;
+  z-index: 149;
+  border-radius: 20px;
+}
+
+.english-chamber-orchestra-77 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 770px;
+  left: 778px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 148;
+}
+
+.group-5d {
+  position: absolute;
+  width: 668px;
+  height: 564px;
+  top: 80px;
+  left: 32px;
+  background: url(./assets/images/818165d6-bfeb-4043-96e9-542b98582383.png) no-repeat center;
+  background-size: cover;
+  z-index: 117;
+}
+
+.vector-70 {
+  position: absolute;
+  width: 649px;
+  height: 325px;
+  top: 800px;
+  left: 40px;
+  background: url(./assets/images/844ad200-ef71-4e61-9450-4d43b4036b07.png) no-repeat center;
+  background-size: cover;
+  z-index: 115;
+}
+
+.ellipse-75 {
+  position: absolute;
+  width: 412px;
+  height: 206px;
+  top: 2000px;
+  left: 160px;
+  background: url(./assets/images/7094a00e-62c3-4eb3-a835-19bbb0f693a3.png) no-repeat center;
+  background-size: cover;
+  z-index: 121;
+}
+
+.final-mordern {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  top: 30px;
+  z-index: 84;
+  overflow: hidden; /* overflow-x에서 overflow로 변경 */
+}
+
+.rectangle-82 {
+  position: absolute;
+  width: 100vw;
+  height: 125px;
+  top: 0px;
+  left: 0;
+  background: #faffc7;
+  border: 1px solid #000000;
+  z-index: 174;
+}
+
+.marquee {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 100%; /* 변경 */
+  height: 100%; /* 추가 */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.break-the-mold-84 {
+  font-family: "Diphylleia-Regular";
+  font-size: 74px;
+  font-weight: 500;
+  line-height: 111px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 178;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.test {
+  position: relative;
+  width: 100vw;
+  height: 2000px;
+  z-index: 84;
+}
+
+.final-mordern-1 {
+  position: relative;
+  width: 100vw;
+  height: 3100px;
+  z-index: 84;
+  overflow: hidden;
+}
+
+.line-8b {
+  position: absolute;
+  width: 1px;
+  height: 956px;
+  top: 0px;
+  left: 750px;
+  background: url(./assets/images/4e5ec22d-02b3-4e4d-8c98-c353f7681feb.png) no-repeat center;
+  background-size: cover;
+  z-index: 164;
+}
+
+.rectangle-8c {
+  position: absolute;
+  width: 480.291px;
+  height: 480.291px;
+  top: 100px;
+  left: 80px;
+  background: url(./assets/images/41a24571-71b4-46ef-b68c-591e86194861.png) no-repeat center;
+  background-size: cover;
+  z-index: 175;
+}
+
+.vector-8d {
+  position: absolute;
+  width: 412.312px;
+  height: 207.31px;
+  top: 80px;
+  left: 1170px;
+  background: url(./assets/images/69d3909e-9f85-48c0-9a2f-2b41a4ea3c24.png) no-repeat center;
+  background-size: cover;
+  z-index: 170;
+}
+
+.ellipse-8e {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 180px;
+  left: 800px;
+  background: url(./assets/images/b87a2e7e-d4f7-4ffb-86f3-ff29ab27f3be.png) no-repeat center;
+  background-size: cover;
+  z-index: 169;
+  border-radius: 50%;
+}
+
+.rectangle-8f {
+  position: absolute;
+  width: 171px;
+  height: 76px;
+  top: 330px;
+  left: 800px;
+  background: #ededed;
+  border: 1px solid #000000;
+  z-index: 167;
+}
+
+.rectangle-90 {
+  position: absolute;
+  width: 171px;
+  height: 76px;
+  top: 330px;
+  left: 1000px;
+  background: #ededed;
+  border: 1px solid #000000;
+  z-index: 168;
+}
+
+.rectangle-91 {
+  position: absolute;
+  width: 822px;
+  height: 483px;
+  top: 470px;
+  left: 780px;
+  background: url(./assets/images/982da0bd303853be1b5ebb0927fbb07e04d79088.png) no-repeat center;
+  background-size: cover;
+  z-index: 150;
+  border-radius: 20px 20px 0 0;
+}
+
+.rectangle-91:hover,
+.spirited-away-suite-reprise:hover,
+.rectangle-50:hover {
+  filter: blur(2px); /* 원하는 블러 강도를 조정하세요 */
+  transition: filter 0.3s ease-in-out; /* 부드러운 전환 효과를 위해 추가 */
+}
+
+.whatever-oasis {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 600px;
+  left: 80px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 157;
+}
+
+.song-description {
+  position: absolute;
+  width: 499px;
+  height: 108px;
+  top: 650px;
+  left: 80px;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 161;
+}
+
+.song-description-92 {
+  position: relative;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+}
+
+.line-96 {
+  position: absolute;
+  width: 1507px;
+  height: 956px;
+  top: 13536px;
+  left: 135px;
+  z-index: 165;
+}
+
+.rectangle-97 {
+  position: absolute;
+  width: 1px;
+  height: 956px;
+  top: 400px;
+  left: 670px;
+  background: url(./assets/images/bafc49a7-cd14-49b9-bcfb-39bb282f43a6.png) no-repeat center;
+  background-size: cover;
+  z-index: 165;
+}
+
+.ellipse-98 {
+  position: absolute;
+  width: 457px;
+  height: 457px;
+  top: 450px;
+  left: 0;
+  background: url(./assets/images/7f0933af555cbe52417e4997837def1b488e978d.png) no-repeat center;
+  background-size: cover;
+  z-index: 155;
+}
+
+.rectangle-99 {
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  top: 700px;
+  left: 1052px;
+  background: url(./assets/images/c1f6036e-dd39-4888-bd3b-2e8a3a770bc1.png) no-repeat center;
+  background-size: cover;
+  z-index: 98;
+  border-radius: 50%;
+}
+
+.spirited-away-suite-reprise {
+  position: absolute;
+  width: 822px;
+  height: 483px;
+  top: 870px;
+  left: 700px;
+  background: url(./assets/images/cde05015-6ffb-472b-b0c3-b5bdd7bd0b1e.png) no-repeat center;
+  background-size: cover;
+  z-index: 151;
+  border-radius: 20px 20px 0 0;
+}
+
+.song-description-9a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 930px;
+  left: 0;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 158;
+}
+
+.song-description-9b {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 570px;
+  height: 162px;
+  top: 980px;
+  left: 0;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 162;
+}
+
+.vector-9c {
+  position: absolute;
+  width: 649.754px;
+  height: 325.753px;
+  top: 1000px;
+  left: 850px;
+  background: url(./assets/images/72a67bf0-1301-430b-95b2-9e02c64513a9.png) no-repeat center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.vector-9d {
+  position: relative;
+  width: 412.312px;
+  height: 207.31px;
+  margin: 118.92px 0 0 118.721px;
+  background: url(./assets/images/6d6f5b0b-6829-4b44-a6d3-8c362813b366.png) no-repeat center;
+  background-size: cover;
+  z-index: 101;
+}
+
+.line-4c {
+  position: absolute;
+  width: 1px;
+  height: 956px;
+  top: 1100px;
+  left: -100px;
+  background: url(./assets/images/731f83a0-573b-48ac-abea-3fa7f5661dd9.png) no-repeat center;
+  background-size: cover;
+  z-index: 166;
+}
+
+.ellipse-4d {
+  position: absolute;
+  width: 391px;
+  height: 391px;
+  top: 1100px;
+  left: 130px;
+  background: url(./assets/images/76d3a6be-bb24-4d8d-9f41-2ef79d9d2ad9.png) no-repeat center;
+  background-size: cover;
+  z-index: 97;
+  border-radius: 50%;
+}
+
+.rectangle-4e {
+  position: absolute;
+  width: 457px;
+  height: 457px;
+  top: 1200px;
+  left: -770px;
+  background: url(./assets/images/39d975b06164afdcaf8cd7e63ff984f3ee8cd9cc.png) no-repeat center;
+  background-size: cover;
+  z-index: 156;
+}
+
+.ellipse-4f {
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  top: 1255px;
+  left: 285px;
+  background: url(./assets/images/1c5fcbdd-77bf-440d-87f0-14b675abd93e.png) no-repeat center;
+  background-size: cover;
+  z-index: 99;
+  border-radius: 50%;
+}
+
+.rectangle-50 {
+  position: absolute;
+  width: 822px;
+  height: 483px;
+  top: 1570px;
+  left: -70px;
+  background: url(./assets/images/b7179670a69f03b670d1d5d1207057c1b4aae728.png) no-repeat center;
+  background-size: cover;
+  z-index: 152;
+  border-radius: 20px 20px 0 0;
+}
+
+.text-37 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 36px;
+  top: 1680px;
+  left: -770px;
+  color: #000000;
+  font-family: "Diphylleia-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 159;
+}
+
+.silent-music {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 499px;
+  height: 162px;
+  top: 1730px;
+  left: -770px;
+  color: #000000;
+  font-family: "IBM Plex Sans KR";
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  text-align: left;
+  z-index: 163;
+}
+
+footer {
+  width: 100%;
+  background-color: #051320;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .upper .text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 10px;
+  font-family: "Diphylleia-Regular", sans-serif;
+  font-size: 14px;
+  color: #897D5D;
+  text-align: center;
+}
+
+footer .lower .text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 10px;
+  font-family: "Diphylleia-Regular", sans-serif;
+  font-size: 18px;
+  color: #897D5D;
+  text-align: center;
+}
+
+footer .text {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+.footer .flexcontainer p {
+  margin: 0; /* Reset margin for paragraphs inside flexcontainer */
+}/*# sourceMappingURL=style.css.map */
